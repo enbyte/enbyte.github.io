@@ -1,0 +1,13 @@
+@font-face {
+    font-family:'Noto Sans KR Light';
+    src: url('../fonts/Noto_Sans_KR/NotoSansKR-Light.otf');
+}
+
+body {
+    font-family: 'Noto Sans KR Light', sans;
+    font-size: 20px;
+}
+
+.font-exempt {
+    font-family: serif;
+}
