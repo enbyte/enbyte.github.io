@@ -15,8 +15,43 @@
     <body>
 
 	<h1 class="banner"> Breakout! </h1>
+	    
+	<script>
+		function validateLockOne() {
+			var answers = ['0', '6', '5C', '13'];
+			var nums = []
+			for (var i = 1; i < 5; i++) {
+				nums += document.getElementById('lock1-check' + i.toString()).value.strip().toUpper();
+			}
+			if (nums == answers) {
+				document.getElementById('isCorrect').innerHtml = 'Correct!';
+			} else {
+				document.getElementById('isCorrect').innerHtml = 'That\'s incorrect. :(';
+			}
+		}
+		
+	    </script>
 
-	<p class="font-exempt"> Welcome! </p>
+	<p> Welcome to breakout! <br/> Try to solve all of these puzzles.</p>
+	    <h3> Lock 1 </h3>
+	    <p> <code> NULL </code> is a character often used in C. </p>
+	    <p> <code> ACK </code> is often used in TCP packets. </p>
+	    <p> <code> \ </code> is used as an escape character. </p>
+	    <p> Vertical tab is used for formatting. </p>
+	    
+	    <h4> Answers to Lock 1: </h4>
+	    
+	    <code>0x</code><input id='lock1-ans1'/>
+	    <p id='lock1-check1'></p>
+	    <code>0x</code><input id='lock1-ans2'/>
+	    <p id='lock1-check2'></p>
+	    <code>0x</code><input id='lock1-ans3'/>
+	    <p id='lock1-check3'></p>
+	    <code>0x</code><input id='lock1-ans4'/>
+	    <p id='lock1-check4'></p>
+	    
+	    <button onClick="validateLockOne()">Check answers</button>
+	    <p id='isCorrect'></p>
 
     </body>
 
