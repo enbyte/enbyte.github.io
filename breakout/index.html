@@ -23,7 +23,8 @@
 			for (var i = 1; i < 5; i++) {
 				console.log(i);
 				console.log('lock1-check' + i.toString());
-				nums += document.getElementById('lock1-ans' + i.toString()).value.strip().toUpper();
+				var x = document.getElementById('lock1-ans' + i.toString());
+				nums += x.value.strip().toUpper();
 			}
 			var ans = document.getElementById('isCorrect');
 			
