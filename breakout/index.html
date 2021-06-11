@@ -24,9 +24,7 @@
 			for (var i = 1; i < 5; i++) {
 				console.log(i);
 				console.log('lock1-check' + i.toString());
-				var x = document.getElementById('lock1-check' + i.toString())
-				console.log(x)
-				nums += document.getElementById('lock1-check' + i.toString()).value.strip().toUpper();
+				nums += document.getElementById('lock1-ans' + i.toString()).value.strip().toUpper();
 			}
 			var ans = document.getElementById('isCorrect');
 			
