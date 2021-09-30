@@ -47,7 +47,7 @@ function display(data, body_object) {  /* todo */
   var d = data.products;
   var k = products;
   for (var i = 0; i < products.length; i++) {
-    add_child_p(body_object, prettify(d[k[i]].product_id) + "'s buy price is " + String(d[k[i]].quick_status.sellPrice) + " coins."
+    add_child_p(body_object, prettify(d[k[i]].product_id) + "'s buy price is " + String(d[k[i]].quick_status.sellPrice) + " coins.");
   };
 };
 
