@@ -43,6 +43,7 @@ function add_child_p(object, text) {
 }
 
 function display(data, body_object) {  /* todo */
+  console.log('display');
   var products = data.products.keys();
   var d = data.products;
   var k = products;
