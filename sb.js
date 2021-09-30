@@ -53,6 +53,7 @@ function display(data, body_object) {  /* todo */
 };
 
 function send_bazaar_request() {
+  console.log('send bz req');
   $.get(b_url, didWork);
 }
 
