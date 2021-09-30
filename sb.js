@@ -1,10 +1,17 @@
-import 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
+load_script('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
 
 
 var hypixel_api_prefix = 'https://api.hypixel.net/';
 var bazaar_postfix = 'skyblock/bazaar';
 var b_url = hypixel_api_prefix + bazaar_postfix;
 var bazaar_data = undefined;
+
+function load_script(url) {
+    var script = document.createElement("script");  // create a script DOM node
+    script.src = url;  // set its src to the provided URL
+
+    document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+}
 
 String.prototype.ucwords = function() {
   str = this.toLowerCase();
