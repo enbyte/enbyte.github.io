@@ -21,7 +21,7 @@ function prettify(name) {
 function did_work(data, status) {
   if (o.status == 200 && data.success) {
     bazaar_data = data;
-    return true;
+    return data;
   } else {
   console.log('Request to API servers failed with code ' + status);
   send_bazaar_request();
