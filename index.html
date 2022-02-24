@@ -7,13 +7,13 @@
     function hakk() {
       var contents = document.getElementByID('box').value;
       var decoded = atob(contents);
-      document.getElementByID("result").innerHTML = "Answer: " + atob.toString();
+      document.getElementByID("result").innerHTML = "Answer: " + decoded.toString();
     </script>
       
   </head>
   <body>
     <input id="box"/>
-    <button onclick="hakk()">HaCk</button>
+    <button onclick="hakk()">Decode</button>
     <p id="result"></p>
   </body>
 </html>
