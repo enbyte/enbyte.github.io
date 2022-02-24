@@ -1,150 +1,21 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#2D2D2D" />
+<html>
   
-  <title>Home :: A simple website</title>
-  
-
-  <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="_static/img/favicon-16x16.png">
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-
-  <link rel="stylesheet" href="_static/css/insegel.css"/>
-
-  <script type="text/javascript">
-    var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:'',
-        VERSION:'',
-        LANGUAGE:'None',
-        COLLAPSE_INDEX:false,
-        FILE_SUFFIX:'.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-    };
-  </script>
-    <script type="text/javascript" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-
-  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
-
-</head>
-
-<body>
-  <div id="insegel-container">
-    <header>
-      <div id="logo-container">
-          
-          <a href="#"><img src="_static/img/logo.svg"></a>
-          
-
-      </div>
-      <div id="project-container">
-        <h1>Home Documentation</h1>
-      </div>
-    </header>
-
-    <div id="content-container">
-
-      <div id="main-content-container">
-        <div id="main-content-header">
-          <h1>A simple website</h1>
-        </div>
-        <div id="main-content">
-          
-  <section id="a-simple-website">
-<h1>A simple website<a class="headerlink" href="#a-simple-website" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<p>Welcome to my website!</p>
-<p>I don’t really know what to put here, but I’m sure I’ll find something soon.</p>
-<p>Here are some projects I made/worked on:</p>
-<section id="pytile">
-<h2>PyTile<a class="headerlink" href="#pytile" title="Permalink to this headline">¶</a></h2>
-<p>Github: <a class="reference external" href="https://github.com/enbyte/pytile">PyTile GitHub</a>
-Documentation: &lt;none yet&gt;</p>
-<p>Yeah I don’t really have much yet.</p>
-</section>
-</section>
-
-
-        </div>
-      </div>
-
-      <div id="side-menu-container">
-
-        <div id="search" role="search">
-        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-            <input type="text" name="q" placeholder="Search..." />
-            <input type="hidden" name="check_keywords" value="yes" />
-            <input type="hidden" name="area" value="default" />
-        </form>
-</div>
-
-        <div id="side-menu" role="navigation">
-
-          
-  
-    
-  
-  
-    <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">A simple website</a><ul>
-<li><a class="reference internal" href="#pytile">PyTile</a></li>
-</ul>
-</li>
-</ul>
-</div>
-  
-
-
-        </div>
-
-        
-
-      </div>
-
-    </div>
-
-<footer>
-    <div id="footer-info">
-        <ul id="build-details">
-            
-                <li class="footer-element">
-                    
-                        <a href="_sources/index.rst.txt" rel="nofollow"> source</a>
-                    
-                </li>
-            
-
-            
-
-            
-        </ul>
-        <div id="credit">
-            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
-
-        </div>
-    </div>
-
-    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
-
-    <script type="text/javascript">
-      $("#menu-toggle").click(function() {
-        $("#menu-toggle").toggleClass("toggled");
-        $("#side-menu-container").slideToggle(300);
-      });
+  <head>
+  <script>
+    function hakk() {
+      var contents = document.getElementByID('box').value;
+      var decoded = atob(contents);
+      document.getElementByID("result").innerHTML = "Answer: " + atob.toString();
     </script>
-
-</footer> 
-
-</div>
-
-</body>
+      
+  </head>
+  <body>
+    <input id="box"/>
+    <button onclick="hakk()"/>
+    <p id="result"></p>
+  </body>
 </html>
+    
+    
