@@ -408,7 +408,7 @@ const wMaterials = [wMaterial, wMaterial, wMaterial, materialTransparent, wMater
                 const water_material = new THREE.MeshLambertMaterial( { color: WATER_COLOR, wireframe:true } );
                 const water_cube = new THREE.Mesh( water_geometry, wMaterials );
                 water_cube.position.set(0, 0, 0)
-                scene.add(water_cube);
+                //scene.add(water_cube);
                 
             const sand_mat = new THREE.MeshStandardMaterial({wireframe:true,map:sand_texture, side:THREE.DoubleSide});//map: sand_texture});
 			const sand_geo = new TerrainGeometry(planeSize, planeSize, 10, 10, smoothing=1)
@@ -460,13 +460,13 @@ else
         this.play();
     }, false);
 }
-myAudio.play();
+
 
 
 			animate();
 			
 
     </script>
-    <input type="slider"/>
+	<button onclick="myAudio.play()">Play Music</button>
   </body>
 </html>
