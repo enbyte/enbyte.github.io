@@ -11,3 +11,7 @@ body {
 .font-exempt {
     font-family: serif;
 }
+
+.radical-head {
+    color:red;
+}
