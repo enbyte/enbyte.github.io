@@ -225,12 +225,14 @@ canvas.height = CANVAS_HEIGHT;
 // handle computer making initial move
 
 let hasWon = false;
+gameState.allowMoreMoves = false;
 drawManager.drawBoardFromGameState(gameState);
 let next_move = await networkManager.getNextMove(gameState);
 console.log(gameState.dropPiece(next_move, COMPUTER_PLAYER));
 drawManager.drawBoardFromGameState(gameState);
 console.log(next_move);
 console.log('dropped piece from computer');
+gameState.allowMoreMoves = true;
 
 async function canvasEventListener(e) {
     if (gameState.getPlayerTurn() === PLAYER_PLAYER) {
