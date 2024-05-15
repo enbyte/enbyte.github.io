@@ -88,7 +88,7 @@ class GameState {
     checkWinPiece(row, col) {
         let player = this.board[row][col];
         if (player === 0) return false;
-        let directions = [[1, 0], [0, 1], [1, 1], [1, -1], [-1, 1], [-1, -1], [-1, 0], [0, -1]];
+        let directions = [[1, 0], [0, 1], [1, 1], [1, -1]];
         for (let [dx, dy] of directions) {
             let count = 1;
             for (let i = 1; i < 4; i++) {
