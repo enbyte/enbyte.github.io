@@ -20,11 +20,9 @@ function sleep(ms) {
 }
 
 function maxKeyOfDict(dict) {
-    let potentials = [];
     for (let key in dict) {
-        if (dict[key] === Math.max(...Object.values(dict))) potentials.push(key);
+        if (dict[key] === Math.max(...Object.values(dict))) return key;
     }
-    return Math.max(potentials);
 }
 
 function setWinText(text) {
