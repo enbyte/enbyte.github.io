@@ -75,6 +75,7 @@ class GameState {
         console.log(cell);
         if (this.dropPiece(cell, this.turn % 2 + 1)) {
             this.turn++;
+            this.allowMoreMoves = false; // pause until computer response
             console.log('piece dropped')
             if (this.checkWin()) {
                 drawManager.drawBoardFromGameState(gameState);
@@ -237,6 +238,7 @@ async function canvasEventListener(e) {
             drawManager.drawBoardFromGameState(gameState);
             let next_move = await networkManager.getNextMove(gameState);
             gameState.dropPiece(next_move, COMPUTER_PLAYER);
+            gameState.allowMoreMoves = true;
             gameState.turn++;
             console.log('clickety clack, network done');
             drawManager.drawBoardFromGameState(gameState);
